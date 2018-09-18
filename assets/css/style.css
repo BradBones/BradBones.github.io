@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles below this point...
+  ========================================
+*/
+
+
+
+/* General rules that cover the entire document */
+body {
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: #999999;
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/qbkls.png);
+    box-sizing: border-box;
+}
+
+/* This class styles the white header background container that fills the width of the browser window. */
+.header-background {
+    background-color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+
+}
+
+/* This class sets the dimentions and color of the invisible header container that holds the logo and nav bar.
+This allows us to have the contents of the header line up with the width of the main content, while having the 
+white bar extent to 100% of the browser's width. */
+.header-content {
+    height: 84px;
+    width: 1022.5px;
+    margin: 0 auto 0em auto;
+    background-color: #fff;
+    padding-bottom: 0;
+}
+
+
+
+/* This class sets the width of the main content div. It also styles the text inside the header */
+#main-content {
+    width: 960px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2em;
+    border: 1px solid #ddd;
+    margin-top: 3em;
+    
+}
+ /* This styles the horizontal lines used under the main content headers. */
+hr {
+    background-color: #ccc;
+    height: 2px;
+    border: 0;
+}
+
+/* Class added to images to have text wrap around them, also creates white space between the image and the surrounding text. */
+.text-image-float {
+    float: left;
+    padding: 0 1em .5em 0;
+}
+
+/* The three class below help us to arrainge the layout of images on the portfolio page. */
+.portfolio-float {
+    float: left;
+    padding: 0 2em 2em 0;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.column2-space-fix {
+    padding-top: 2em;
+}
+
+/* Sets the styling of all headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+/* Styes our h2 page headers. We're not using h2 anywere else, otherwise this would be better defined as a separate class. */
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Creates a class for styling the logo text. It could also be an ID but just in case it might be used somewhere else on the site, I'm going with a class. */
+.logo {
+    font-size: 2em;
+    color: white;
+    background-color: #4aaaa5;
+    height: 36px;
+    width: 300px;
+    text-align: center;
+    padding: .75em;
+    font-weight: 400;
+}
+
+/* styling that turns the unordered list in our nav section into a proper horizontal nav bar. */
+#navigation ul
+{
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: -50px;
+}
+
+#navigation ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li:not(:first-child):before {
+    content: " | ";
+    opacity: 0.3;
+}
+
+/* Styling for all links (so far we only have links in the nav bar, but they could now appear in other places and still have a uniform look.) */
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+
+/* Here is the styling for the contact page form - Inc. the submit button. */
+form {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.25em;
+}
+
+
+#submit {
+    font-size: 1em;
+    color: white;
+    background-color: #4aaaa5;
+    text-align: center;
+    padding: .5em 2em .5em 2em;
+    font-weight: 400;
+}
+
+#submit:hover {
+    opacity: 0.5;
+}
+
+
+/* This styling governs the fixed footer */
+footer {
+    color: #a9a9a9;
+    font-size: .75em;
+    text-align: center;
+    background-color: #666;
+    padding-top: 3em;
+    padding-bottom: .5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+}
