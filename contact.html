@@ -3,46 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <title>Contact</title>
+        <!--Links to CSS style sheets, reset first.-->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
     </head>
     <body>
+
         <!--This div contains all the other divs within the webpage.-->
         <div>
+
             <!--Header div, contains the header text (logo) and navigation bar-->
             <div class="header-background">
                 
-                <!--This div holds the header contents and is styled to match the "main-content"-->
+                <!--This div contains the white header strip that goes across the top of the browser window from edge to edge.-->
                 <div class="header-content">
-                    <!--Header text-->
-                    <div>
-                        <header>
-                            <h1 class="logo">Neil Bradley Young</h1>
-                        </header>
-                    </div>
+
+                    <!--Header - Contains the logo text, which is also a link to the homepage.-->
+                    <header>
+                        <h1 class="logo">
+                            <a class=no-style href="#">Neil Bradley Young</a>
+                        </h1>
+
+                    </header>
         
                     <!--Navigation bar.-->
-                    <div id="navigation">
-                        <nav>
-
-                            <ul>
-                                <li><a href="index.html">About</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                                 
-                            </ul>
+                        </ul>
 
-                        </nav>
-                        
-                    </div>
-                    
+                    </nav>  
 
                 </div>
 
             </div>
 
-            <!--Main content.-->
-            <div id="main-content">
-                <h2>About Me</h2>
+            <!--Main content section.-->
+            <section id="main-content">
+
+                <h2>Contact</h2>
 
                 <hr>
                 <br>
@@ -50,49 +52,31 @@
                 <form action="send-email.php" method="post">
                     Name:
                     <br>
-                    <input type="text" name="Surname" placeholder="John Smith" size="158" maxlength="40">
+                    <input type="text" name="Surname" placeholder="John Smith" size="100" maxlength="40">
                     <br>
                     <br>
                     Email:
                     <br>
-                    <input type="email" name="Surname" placeholder="example@gmail.com" size="158" maxlength="40">
+                    <input type="email" name="Surname" placeholder="example@gmail.com" size="100" maxlength="40">
                     <br>
                     <br>
                     Message:
                     <br>
-                    <textarea type="message" name="message" rows="10" cols="156"></textarea>
+                    <textarea type="message" name="message" rows="10" cols="60"></textarea>
                     <br>
                     <br>
                     <input type="submit" value="Submit" id="submit">
+
                 </form>
 
-            </div>
-
+            </section>
 
             <!--Footer bar.-->
-            <div>
-                <footer>
-                    <p>
-                        Copyright Neil Bradley Young 2018
-                    </p>
-
-                </footer>
-            </div>
-         
-
-       
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
+            <footer>
+                Copyright Neil Bradley Young 2018
+            </footer>
+    
+        </div>
+    
     </body>    
 </html>
